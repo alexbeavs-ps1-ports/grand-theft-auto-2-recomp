@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Grand Theft Auto 2",
+    "id": "SLES-01404",
+    "boot_exe": "SLES_014.04"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Grand Theft Auto 2 (Europe) (En,Fr,De,Es,It) (Rev 1).cue",
+    "bin_name": "Grand Theft Auto 2 (Europe) (En,Fr,De,Es,It) (Rev 1).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 546468384,
+      "md5": "fc12c6afd1ac7898310014121560c4ba",
+      "sha1": "acf178b3339290974b6da40f4769b017590b6d6a",
+      "crc32": "31485628"
+    },
+    "disc_fp": "7477422b0f18d8b4c277d20f8eed8605e08737834b730999852c1432e15ec26d"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x800156D8",
+    "text_size": "0x00029800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 230,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
